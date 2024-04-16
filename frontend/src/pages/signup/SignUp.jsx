@@ -33,11 +33,11 @@ const SignUp = () => {
 				<form onSubmit={handleSubmit}>
 					<div>
 						<label className='label p-2'>
-							<span className='text-base label-text'>Full Name</span>
+							<span className='text-base text-gray-300 label-text'>Full Name</span>
 						</label>
 						<input
 							type='text'
-							placeholder='John Doe'
+							placeholder='Enter Your Name'
 							className='w-full input input-bordered  h-10'
 							value={inputs.fullName}
 							onChange={(e) => setInputs({ ...inputs, fullName: e.target.value })}
@@ -46,11 +46,11 @@ const SignUp = () => {
 
 					<div>
 						<label className='label p-2 '>
-							<span className='text-base label-text'>Username</span>
+							<span className='text-base text-gray-300 label-text'>Username</span>
 						</label>
 						<input
 							type='text'
-							placeholder='johndoe'
+							placeholder='Enter Username'
 							className='w-full input input-bordered h-10'
 							value={inputs.username}
 							onChange={(e) => setInputs({ ...inputs, username: e.target.value })}
@@ -59,7 +59,7 @@ const SignUp = () => {
 
 					<div>
 						<label className='label'>
-							<span className='text-base label-text'>Password</span>
+							<span className='text-base text-gray-300 label-text'>Password</span>
 						</label>
 						<input
 							type='password'
@@ -72,7 +72,7 @@ const SignUp = () => {
 
 					<div>
 						<label className='label'>
-							<span className='text-base label-text'>Confirm Password</span>
+							<span className='text-base text-gray-300 label-text'>Confirm Password</span>
 						</label>
 						<input
 							type='password'
@@ -87,7 +87,7 @@ const SignUp = () => {
 
 					<Link
 						to={"/login"}
-						className='text-sm hover:underline hover:text-blue-600 mt-2 inline-block'
+						className='text-sm hover:underline hover:text-blue-600 text-gray-300 mt-2 inline-block'
 						href='#'
 					>
 						Already have an account?
